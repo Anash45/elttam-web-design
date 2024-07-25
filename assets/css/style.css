@@ -84,6 +84,8 @@ a {
 
 .btn-main:hover {
     background-color: var(--elttam-orange);
+    color: #fff;
+    transition: 0.3s ease-in-out;
 }
 
 .security-tape {
@@ -143,6 +145,37 @@ a {
     background-size: 750px;
     background-position: right bottom;
     background-repeat: no-repeat;
+}
+
+.product-security-page header {
+    background-image: url(../images/Hero-Product-Security.svg);
+    background-size: 580px;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 13%);
+    background-position-y: bottom;
+}
+
+.adversary-simulation-page header {
+    background-image: url(../images/Hero-Adversary-Simulation.svg);
+    background-size: 580px;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 13%);
+    background-position-y: bottom;
+}
+
+.applied-research-page header {
+    background-image: url(../images/Hero-Applied-Research.svg);
+    background-size: 750px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.talkback-page header {
+    background-image: url(../images/Hero-Talkback.svg);
+    background-size: 580px;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 13%);
+    background-position-y: bottom;
 }
 
 .hero {
@@ -378,11 +411,14 @@ a {
     padding: 10px;
     background-color: rgba(7, 45, 88, 1);
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     left: 50%;
     transform: translateX(-50%);
 }
 
+.dropdown-menu.show li{
+    width: 100%;
+}
 .dropdown-item {
     border-radius: 10px;
     padding: 10px 15px;
@@ -569,7 +605,7 @@ footer {
 }
 
 .release-card .team-connect {
-    word-spacing: 10px;
+    word-spacing: 0px;
     letter-spacing: 2px;
 }
 
@@ -856,7 +892,155 @@ footer {
     background-repeat: no-repeat;
 }
 
+.container-2xl {
+    margin: 0 auto;
+}
+
+.sas-card {
+    border-radius: 16px;
+    box-shadow: none;
+    border: 0;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.sas-card-img {
+    height: 65px;
+    width: 65px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.sas-card .card-body {
+    padding: 30px;
+    background-color: var(--elttam-white);
+    margin: 8px;
+    border-radius: 16px;
+}
+
+.sas-globe {
+    height: 400px;
+}
+
+.sas-card-1,
+.sas-card-2,
+.sas-card-3 {
+    border: 2px dashed rgba(196, 209, 224, 1);
+}
+
+.tech-box {
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+    padding: 30px;
+}
+
+.tb-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.delivery {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--elttam-white);
+    background-color: rgba(7, 45, 88, 1);
+    box-shadow: 0 10px 45px rgba(3, 15, 28, 0.3);
+}
+
+.aprch-img {
+    height: 140px;
+    width: 140px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.double-line {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translate(-50%, 46px);
+    height: 365px !important;
+}
+
+.result-percent {
+    line-height: 100%;
+    font-size: 56px;
+}
+
+.result-text {
+    font-size: 16px;
+}
+
+@media (min-width: 1500px) {
+    .sas-globe {
+        display: none;
+    }
+
+    .container-2xl {
+        max-width: 1440px !important;
+    }
+
+    .weird-bg {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        bottom: 30px;
+        left: 119px;
+        background-image: url(../images/weird-bg.svg);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 89%;
+    }
+
+
+    .sas-card .card-body {
+        margin: 0px;
+        border-radius: 16px;
+    }
+
+    .sas-card-1 {
+        transform: translate(-1px, -27px);
+    }
+
+    .sas-card-2 {
+        transform: translate(-1px, -14px);
+    }
+
+    .sas-card-3 {
+        transform: translate(-1px, 2px);
+    }
+
+    .sas-card {
+        border: 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .double-line {
+        top: 56px;
+        height: 360px !important;
+    }
+}
+
 @media (max-width: 1200px) {
+    .double-line {
+        top: 80px;
+        height: 360px !important;
+    }
+
+    .sas-globe {
+        display: none;
+    }
 
     .article-slider .slick-track {
         margin: 0;
@@ -864,7 +1048,11 @@ footer {
 
     .home-page header,
     .company-page header,
-    .labs-page header {
+    .labs-page header,
+    .product-security-page header,
+    .adversary-simulation-page header,
+    .applied-research-page header,
+    .talkback-page header {
         background-image: none;
     }
 
@@ -887,6 +1075,9 @@ footer {
 }
 
 @media (max-width: 992px) {
+    .double-line {
+        display: none;
+    }
 
     .navbar-nav {
         padding-top: 20px;
@@ -912,6 +1103,12 @@ footer {
         z-index: 9;
     }
 
+    .sas-card-1,
+    .sas-card-2,
+    .sas-card-3 {
+        border: 0;
+    }
+
     .dropdown-menu.show {
         align-items: start;
         width: 100%;
@@ -935,6 +1132,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    .hero {
+        padding: 80px 0 30px;
+    }
 
     .page-title {
         font-size: 36px;
@@ -975,5 +1176,9 @@ footer {
 
     .in-media-carousel .custom-next-arrow {
         right: 0px;
+    }
+
+    .results-img {
+        width: 100%;
     }
 }
