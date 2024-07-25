@@ -412,8 +412,6 @@ a {
     background-color: rgba(7, 45, 88, 1);
     flex-direction: column;
     align-items: start;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .dropdown-menu.show li{
