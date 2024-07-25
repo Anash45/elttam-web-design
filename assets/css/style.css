@@ -460,7 +460,7 @@ a {
 }
 
 .weird-box {
-    padding: 40px;
+    padding: 40px 50px;
     border: 2px dashed rgba(26, 79, 129, 0.15);
     border-radius: 26px;
 }
