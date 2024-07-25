@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Company - elttam</title>
+        <link rel="shortcut icon" href="./assets/images/Logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+            integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+            integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body class="article-details-page">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./assets/images/elttam_logo_full_orange_black 1.svg" alt="Logo"
+                            class="d-inline-block align-top h-logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./product-security.html">Product Security</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./adversary-simulation.html">Adversary
+                                            Simulation</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./applied-research.html">Applied Research</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./labs.html">Labs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./company.html">Company</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-main" href="./contact-us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="pb-5 pt-xl-0 pt-5 mt-xl-0 mt-5">
+                <div class="light boxed p-md-5 p-4 mt-xl-5 mt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-3 mb-xl-0 mb-4">
+                                <div class="bg-white p-4 article-info-box">
+                                    <div class="d-flex gap-1 align-items-center fw-medium breadcrumb mb-3">
+                                        <a href="./index.html" class="text-blue">Home</a> <span
+                                            class="text-orange">•</span><span class="text-grey">Blog</span>
+                                    </div>
+                                    <h4 class="fw-medium f-space text-blue toc-title mb-2">Table of Contents</h4>
+                                    <div class="d-flex gap-2 align-items-center read-time"><img
+                                            src="./assets/images/time-ic.svg" alt="Time"><span>10 min read</span></div>
+                                    <div class="border-top border-blue my-3"></div>
+                                    <a href="#sec-1" class="article-title-link">Introduction</a>
+                                    <div class="border-top border-blue my-3"></div>
+                                    <a href="#sub-sec-1" class="article-subsec-link">A brief explanation about prisma
+                                        and trivial bad practices</a>
+                                    <div class="border-top border-blue my-3"></div>
+                                    <a href="#sub-sec-2" class="article-subsec-link">Relational filtering attacks for
+                                        the prisma ORM</a>
+                                    <ul class="f-space main-list mt-2">
+                                        <li>Basic relational filtering attack</li>
+                                        <li>Exploiting many to many relationships</li>
+                                    </ul>
+                                    <div class="border-top border-blue my-3"></div>
+                                    <a href="#sub-sec-3" class="article-subsec-link">Time based exploitation of
+                                        prisma</a>
+                                    <ul class="f-space main-list mt-2">
+                                        <li>Build a time based relational filtering payload <ul class="secondary-list">
+                                                <li>Operator selection</li>
+                                                <li>Constructing a timebased leak payload <ul class="secondary-list">
+                                                        <li>UNDERSTANDING THE POSTGRESQL PLANNER SUBSYSTEM</li>
+                                                        <li>The final payload</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Detecting a leak</li>
+                                        <li>The Plomber tool</li>
+                                    </ul>
+                                    <div class="border-top border-blue my-3"></div>
+                                    <a href="#sub-sec-4" class="article-subsec-link">Future research and work</a>
+                                    <div class="border-top border-blue my-3"></div>
+                                    <a href="#sub-sec-5" class="article-subsec-link">Part two conclusion</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-9 px-xl-5">
+                                <article>
+                                    <div class="article-content">
+                                        <div class="article-info mb-5">
+                                            <h1 class="text-blue sec-title mb-3 f-space text-uppercase text-start">
+                                                PLORMBING YOUR PRISMA ORM WITH TIME-BASED ATTACKS</h1>
+                                            <p class="text-large mb-3">Part two of a series about how you can exploit
+                                                the Prisma ORM to leak sensitive data</p>
+                                            <div class="d-flex gap-1 mb-3 align-items-center author-info mb-3">
+                                                <a href="./index.html" class="text-orange fw-semibold">Alex Brown</a>
+                                                <span class="text-grey">•</span><span class="text-grey">July 08
+                                                    2024</span>
+                                            </div>
+                                            <img src="./assets/images/feature-image.png" alt="Feature image"
+                                                class="img-fluid w-100 feat-img">
+                                        </div>
+                                    </div>
+                                    <div class="article-description">
+                                        <section class="content-sec" id="sec-1">
+                                            <h2 class="text-blue f-space article-subtitle mb-3">Introduction</h2>
+                                            <p>This is the second part of our <a href="#" target="_blank">series about
+                                                    the ORM Leaks vulnerability class</a>, where in this article the
+                                                focus is shifted to the Prisma ORM for NodeJS applications. The Prisma
+                                                ORM is one of the most popular NodeJS ORMs due to its simplicity, but
+                                                because of its simplicity an ORM Leak vulnerability could be easily
+                                                introduced into an application. Similar to Django, an attacker could
+                                                perform a relational filtering attack to leak sensitive fields from
+                                                records that were not directly exposed to an attacker or bypass access
+                                                controls. <br><br>
+                                                <i>However, unlike Django the <a href="#" target="_blank">Prisma ORM</a>
+                                                    allows attackers far greater control over the generated SQL queries
+                                                    that opens up the possibility of <strong>time-based
+                                                        attacks</strong>.</i>
+                                                <br><br> This article will deep dive into a methodology for constructing
+                                                a <strong>time-based attack</strong> for exploiting an ORM Leak
+                                                vulnerability, using Prisma as an example; along with the release of a
+                                                tool called plormber for assisting with the time-based exploitation of
+                                                ORM Leak vulnerabilities. <br><br> So call your
+                                                <strong><i>plORMber</i></strong> again, because this time Prisma is
+                                                leaking!
+                                            </p>
+                                        </section>
+                                        
+                                        <section class="mt-5 content-sec" id="sub-sec-1">
+                                            <h2 class="text-blue f-space article-subtitle mb-3">A brief explanation
+                                                about prisma and trivial bad practices</h2>
+                                            <p class="mb-4">Models are defined in a schema.prisma file for Prisma, where
+                                                relations can be linked with other models. For example, recreating the
+                                                blog example from the previous <a href="#" target="_blank">Django ORM
+                                                    Leak</a> article the schema.prisma file could look like the
+                                                following. </p>
+                                            <img src="./assets/images/Code.png" alt="Code"
+                                                class="w-100 img-fluid content-img mb-4">
+                                            <p class="mb-0">The Prisma ORM uses an <strong>object syntax</strong>, where
+                                                options specify how the data should be filtered, ordered, etc. A good
+                                                example of this object syntax is <a href="#" target="_blank">explained
+                                                    in Prisma's documentation</a> that is summarised below.</p>
+                                        </section>
+                                        
+                                        <section class="mt-5 content-sec" id="sub-sec-2">
+                                            <h2 class="text-blue f-space article-subtitle mb-3">The desired query</h2>
+                                            <ul class="mt-3 content-list">
+                                                <li>Return all User records where: <ul>
+                                                        <li>The email address ends with prisma.io</li>
+                                                        <li>Has at least one published post</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Return all User fields</li>
+                                                <li>Includes all posts where published is true</li>
+                                            </ul>
+                                        </section>
+                                        <section class="mt-5 content-sec" id="sub-sec-3">
+                                            <h2 class="text-blue f-space article-subtitle mb-3">The implementation using
+                                                prisma</h2>
+                                            <img src="./assets/images/Code-2.png" alt="Code"
+                                                class="w-100 img-fluid content-img mb-4">
+                                            <p class="mb-0">Since all the options for filtering are defined in a single
+                                                input object, an obvious security concern is if an attacker can directly
+                                                control all the filter options then they could control the data that is
+                                                returned. </p>
+                                        </section>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="pb-5 px-md-5">
+            <section class="pt-5 pb-5">
+                <div class="container px-xl-4">
+                    <div class="d-flex justify-content-md-between justify-content-center text-center mb-4">
+                        <h2 class="sec-title text-white f-space mb-0">Related Articles</h2>
+                    </div>
+                    <div class="pt-sm-3">
+                        <div class="article-slider">
+                            <div class="h-100 d-flex flex-column">
+                                <div class="card bg-white mb-4 home-article-card">
+                                    <div class="card-body">
+                                        <a href="./article-details.html">
+                                            <img src="./assets/images/blog1.png" alt="Blog">
+                                        </a>
+                                        <a href="./article-details.html" class="ha-title">Plormbing your prisma orm with
+                                            time-based attacks</a>
+                                        <p class="ha-info">BY <a href="#" class="text-orange">ALEX BROWN</a> JULY 08,
+                                            2024</p>
+                                        <p class="d-flex align-items-center flex-wrap ha-desc">Part two of our ORM Leak
+                                            series about attacking the Prisma ORM and leaking sensitive data in a
+                                            time-based attack.</p>
+                                        <div class="ha-tags">
+                                            <a href="#" class="ha-tag">ORM</a>
+                                            <a href="#" class="ha-tag">ORM LEAKS</a>
+                                            <a href="#" class="ha-tag">Prisma</a>
+                                            <a href="#" class="ha-tag">Web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-100 d-flex flex-column">
+                                <div class="card bg-white mb-4 home-article-card">
+                                    <div class="card-body">
+                                        <a href="./article-details.html">
+                                            <img src="./assets/images/blog2.png" alt="Blog">
+                                        </a>
+                                        <a href="./article-details.html" class="ha-title">Plormbing your Django ORM</a>
+                                        <p class="ha-info">BY <a href="#" class="text-orange">ALEX BROWN</a> JULY 08,
+                                            2024</p>
+                                        <p class="d-flex align-items-center flex-wrap ha-desc">This blog article
+                                            explains what are ORM Leak vulnerabilities, how they could be exploited to
+                                            access sensitive information with the Django ORM.</p>
+                                        <div class="ha-tags">
+                                            <a href="#" class="ha-tag">ORM</a>
+                                            <a href="#" class="ha-tag">ORM LEAKS</a>
+                                            <a href="#" class="ha-tag">Prisma</a>
+                                            <a href="#" class="ha-tag">Web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-100 d-flex flex-column">
+                                <div class="card bg-white mb-4 home-article-card">
+                                    <div class="card-body">
+                                        <a href="./article-details.html">
+                                            <img src="./assets/images/blog3.png" alt="Blog">
+                                        </a>
+                                        <a href="./article-details.html" class="ha-title">Keeping up with Pwnses</a>
+                                        <p class="ha-info">BY <a href="#" class="text-orange">ALEX BROWN</a> JULY 08,
+                                            2024</p>
+                                        <p class="d-flex align-items-center flex-wrap ha-desc">This blog article
+                                            explains what are ORM Leak vulnerabilities, how they could be exploited to
+                                            access sensitive information with the Django ORM.</p>
+                                        <div class="ha-tags">
+                                            <a href="#" class="ha-tag">ORM</a>
+                                            <a href="#" class="ha-tag">ORM LEAKS</a>
+                                            <a href="#" class="ha-tag">Prisma</a>
+                                            <a href="#" class="ha-tag">Web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="dark-blue boxed p-sm-5 py-5 px-3">
+                <div class="container px-xl-4 py-4">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-6 col-12">
+                            <div
+                                class="d-flex flex-column justify-content-md-between justify-content-center gap-4 align-items-md-start align-items-center mb-lg-0 mb-5">
+                                <img src="./assets/images/elttam_logo_full_orange_black 1.svg" alt="Logo" height="56">
+                                <div class="d-flex flex-lg-row flex-column gap-lg-5 gap-4 mt-3 w-100">
+                                    <div class="d-flex flex-column gap-lg-2 gap-4">
+                                        <a href="mailto:hello@elttam.com" class="text-orange">hello@elttam.com</a>
+                                        <p class="mb-0 text-white">PGP Key: A105DCB5.gpg</p>
+                                    </div>
+                                    <p class="mb-0 text-white"> Suite 15/Mezzanine, 388 George St <br>Sydney NSW 2000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 col-12">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex flex-column foot-links">
+                                        <span class="foot-title">SERVICES</span>
+                                        <a href="#">Product Security</a>
+                                        <a href="#">Adversary Simulation</a>
+                                        <a href="#">Applied Research</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column foot-links">
+                                        <span class="foot-title">SERVICES</span>
+                                        <a href="#">About</a>
+                                        <a href="#">Labs</a>
+                                        <a href="#">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-footer pt-5">
+                <div class="container">
+                    <div class="d-flex gap-4 justify-content-between text-center flex-md-row flex-column-reverse">
+                        <p class="text-white-70 mb-0 fw-medium">&copy; 2023 elttam Pty Ltd. ABN 46 779 503 499, ACN 605
+                            531 502</p>
+                        <div class="d-flex gap-4 align-items-center justify-content-center">
+                            <a href="#" class="text-white-70"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="text-white-70"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="text-white-70"><i class="fa fa-rss"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/js/jquery-3.6.1.min.js"></script>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+            integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+
+</html>
